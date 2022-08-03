@@ -1,0 +1,27 @@
+{% extends 'main/base.html' %}
+
+
+{% block Title %}
+Новости
+{% endblock %}
+
+{% block body %}
+
+
+
+<div class="features">
+    <p class="center"> Добавить новость </p>
+    <form method="post">
+         {% csrf_token %}
+        {{ form.title }}<br>
+        {{ form.intro }}<br>
+        {{ form.data }}<br>
+        {{ form.text }}<br>
+
+        <button class="btn btn-info"  type="submit">Отправить</button>
+    </form>
+
+
+
+</div>
+{% endblock %}

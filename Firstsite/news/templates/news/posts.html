@@ -18,12 +18,13 @@
           </div>
           <div class="card-body">
             <h1 class="card-title pricing-card-title"><small class="text-muted fw-light">{{el.intro}}</small></h1>
-            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Подробнее</button>
+            <a href="{% url 'new-detail' el.id %}" class="btn btn-info">Подробнее</a>
           </div>
         </div>
       </div>
 
     {% endfor %}
+    <a href="{% url 'create' %}"><button class="btn btn-info" > <i class="fa fa-plu-circle"> Добавить новость </i>
 
 
 </div>
